@@ -2,52 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://example.com/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://example.com/en/license/</loc>
+    <loc>http://localhost:1313/en/license/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://example.com/license/"
+                href="http://localhost:1313/license/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/license/"
+                href="http://localhost:1313/en/license/"
                 />
   </url><url>
-    <loc>https://example.com/en/services/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://example.com/services/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/en/services/"
-                />
+    <loc>http://localhost:1313/en/services/</loc>
   </url><url>
-    <loc>https://example.com/en/legal/</loc>
+    <loc>http://localhost:1313/en/legal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://example.com/legal/"
+                href="http://localhost:1313/legal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/legal/"
+                href="http://localhost:1313/en/legal/"
                 />
   </url>
 </urlset>

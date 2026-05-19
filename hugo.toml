@@ -128,3 +128,7 @@ enableEmoji = true
     weight = 20
     contentDir = "content/en"
     languageName = "English"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
