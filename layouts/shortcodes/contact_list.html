@@ -1,0 +1,8 @@
+<div class="contact-grid">
+  {{ range .Site.Params.contacts }}
+    <a class="contact-pill" href="{{ .url | safeURL }}" title="{{ .label | default .value }}">
+      <span class="contact-pill-icon"><i class="{{ .icon }}" aria-hidden="true"></i></span>
+      <span class="contact-pill-text">{{ .value }}</span>
+    </a>
+  {{ end }}
+</div>

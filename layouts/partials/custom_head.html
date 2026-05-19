@@ -1,0 +1,116 @@
+<!-- A partial to be overwritten by the user.
+     Its content will appear before the closing </head>-tag -->
+
+
+<!-- Custom CSS via inline styles
+     You may use this template to add custom CSS to your site like so: -->
+<!--
+<style>
+:root {
+    /* see variables.scss for more variables*/
+
+    /*
+    --section-light-text-color: #3a4145!important;
+    --section-light-bg-color: #ffdb8c!important;
+    --section-dark-bg-color: #035e00!important;
+    */
+
+     /* define list element for unnumbered lists, leave empty for default list element */
+     /* fa-asterisk is the default icon if this variable definition is missing completely */
+     --ul-li-icon: fa-dashcube;     /* this sets fa-dashcube as list icon */
+     --ul-li-icon: ;                /* this sets the default html list icon */
+}
+</style>
+-->
+
+<!-- Custom CSS via "custom.css"-file
+     If you would rather place your custom CSS into
+     a separate file, create a "custom.css" in your
+     local "static/css"-directory. Then add a <link>-tag
+     referencing your "custom.css" like so: -->
+
+<!-- <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}'> -->
+
+<!-- Custom CSS: Color Codes
+     You may checkout https://htmlcolorcodes.com/ to get those
+     weird color codes (like "#22343A") ;-). -->
+
+<!-- Load custom fonts for the header -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+}
+
+.contact-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 1.25rem;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(255,255,255,0.75);
+    border-radius: 999px;
+    color: var(--section-light-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-pill:hover,
+.contact-pill:focus-visible {
+    transform: translateY(-1px);
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.contact-pill-icon {
+    display: inline-flex;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 30%;
+    align-items: center;
+    justify-content: center;
+    background: var(--highlight);
+    color: var(--highlight-contrast);
+    flex-shrink: 0;
+}
+
+.contact-pill:hover .contact-pill-icon,
+.contact-pill:focus-visible .contact-pill-icon {
+    background: rgba(255,255,255,0.95);
+    color: var(--highlight);
+}
+
+.contact-pill-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-pill {
+        justify-content: center;
+        width: 100%;
+    }
+}
+</style>
+
+<!-- Custom link-tags for different icons
+     Generated via https://favicon.io/favicon-generator/ -->
+
+{{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
+{{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
+{{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
+<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
+

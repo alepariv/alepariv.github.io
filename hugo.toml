@@ -1,0 +1,130 @@
+baseURL = "https://example.com"
+
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
+
+defaultContentLanguage = "es"
+
+# The name of this wonderful theme ;-).
+theme = "hugo-scroll"
+
+# The browser tab name
+title = "Alepariv - Centro Psicológico y Holístico"
+
+# In order to add version information in the page's footer set to true.
+# enableGitInfo = true
+
+# enable emoji processing in Markdown (valid only for pure markdown content)
+enableEmoji = true
+
+# Theme-specific variables `.Site.Params.myParamName`
+[params]
+
+    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+    favicon = "images/favicon.png"
+
+    # These "images" are used for the structured data templates. This will show up, when
+    # services like Twitter or Slack want to generate a preview of a link to your site.
+    # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
+    # NOT the actual header background image, go to _index.md instead
+    images = ["images/cover-image.jpg"]
+
+    # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
+    # Ideal images are homogenous around the centre and contrasting to the text.
+    # see CSS classes: .title-and-description-guard, .blog-title, .blog-description
+    # see _index.md header_headline and header_subheadline
+    title_guard = false
+
+    # Another "title" :-). This one is used as the site_name on the Hugo's internal
+    # opengraph structured data template.
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "Alepariv - Centro Psicológico y Holístico"
+
+    # The "description" of your website. This is used in the meta data of your generated html.
+    description = "Alepariv - Centro Psicológico y Holístico"
+
+    # Show a menu of languages available
+    language_menu = false
+
+    # Show also a language menu item for the current language, if false only
+    # show the remaining languages
+    show_current_lang = true
+
+    # A "copyright"-line to be added at the bottom of the page.
+    # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+    copyright = "© Alepariv"
+
+    # This theme will, by default, inject a design-by-line at the bottom of the page.
+    # You can turn it off, but we would really appreciate if you don’t :-)
+    hidedesignbyline = false
+
+    # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
+    invertSectionColors = false
+
+    # Options used for automatic image generation. see: https://gohugo.io/content-management/image-processing/
+    image_options = "webp q90 lanczos photo"
+
+    # Use "page_title | site_title" for <title> tags
+    # e.g. <title>Legal | Alepariv - Centro Psicológico y Holístico</title>
+    combine_page_and_site_title = false
+
+    [params.footer]
+    # Show contact icons for email/phone (if specified) in the footer of the page
+    showContactIcons = true
+
+    # Show links indicated with footer_menu and footer_menu_title in the footer of the page
+    showFooterLinks = false
+
+    [params.meta]
+        keywords = "Alepariv,Alepariv Centro Psicológico y Holístico,Alejandra Padilla Rivera,Terapia Alepariv,Diseño Humano Alepariv,Psicología Sistémica, Terapia Online, Terapia Sistémica, Terapia Holística, Bienestar Emocional, Sanación Emocional, Desarrollo Personal, Terapia para Parejas, Autoestima y Amor Propio, Constelaciones Familiares, Diseño Humano, Terapia Emocional Online, Psicóloga Online México, Terapia Holística Online, Online Therapy, Human Design Reading, Emotional Wellness, Psicóloga Online México, Psicóloga Online Español, Cómo trabajar la ansiedad, Cómo mejorar mi autoestima, Cómo sanar heridas de infancia"
+
+    [[params.contacts]]
+        label = "phone"
+        value = "+52 55 3989 2406"
+        url = "tel:+5239892406"
+        icon = "fa fa-phone"
+
+    [[params.contacts]]
+        label = "email"
+        value = "conversemos@alepariv.com"
+        url = "mailto:conversemos@alepariv.com"
+        icon = "fa fa-envelope"
+# Alepariv-Centro-Psicologico-y-Holistico
+    [[params.contacts]]
+        label = "Facebook"
+        value = "Facebook"
+        url = "https://www.facebook.com/p/Alepariv-Centro-Psicologico-y-Holistico-61559030600743/"
+        icon = "fa-brands fa-facebook"
+
+    [[params.contacts]]
+        label = "instagram"
+        value = "instagram"
+        url = "https://www.instagram.com/alepariv2024"
+        icon = "fa-brands fa-instagram"
+        
+    [[params.contacts]]
+        label = "WhatsApp"
+        value = "WhatsApp"
+        url = "https://wa.link/bx5dkn"
+        icon = "fa-brands fa-whatsapp"
+
+    # Add additional contacts here!
+    # [[params.contacts]]
+    #     label = ""
+    #     value = ""
+    #     url = ""
+    #     icon = ""
+
+# Define additional languages
+[languages]
+  [languages.es]
+    title = "Alepariv - Centro Psicológico y Holístico"
+    weight = 10
+    languageName = "Español"
+    contentDir = "content/es"
+
+  [languages.en]
+    title = "Alepariv - Centro Psicológico y Holístico"
+    weight = 20
+    contentDir = "content/en"
+    languageName = "English"

@@ -1,0 +1,226 @@
+<section class="alepariv-about">
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <div class="about-card">
+    <span class="tag">Fundadora de ALEPARIV</span>
+
+    <h1>Sobre Alejandra Padilla Rivera</h1>
+
+    <p class="intro">
+      Alejandra Padilla Rivera es terapeuta con enfoque sistémico y holístico,
+      especializada en acompañamiento emocional, dinámicas familiares y procesos
+      de transformación consciente.
+    </p>
+
+    <p>
+      Su trabajo integra herramientas psicológicas, sistémicas y energéticas
+      para ayudar a las personas a comprender el origen de sus patrones emocionales
+      y construir una vida con mayor claridad y bienestar.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Experiencia y Especialidades</h2>
+
+        <ul>
+          <li>Psicología Sistémica</li>
+          <li>Órdenes del Amor</li>
+          <li>Diseño Humano</li>
+          <li>Procesos terapéuticos individuales</li>
+          <li>Talleres conscientes</li>
+          <li>Acompañamiento emocional</li>
+          <li>Terapias complementarias</li>
+          <li>Desarrollo personal y espiritual</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Su Estilo Terapéutico</h2>
+
+        <ul>
+          <li>Cercanía humana</li>
+          <li>Confrontación consciente</li>
+          <li>Contención emocional</li>
+          <li>Profundidad terapéutica</li>
+          <li>Lenguaje claro y sensible</li>
+          <li>Integración emocional y sistémica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+    --bg: #0f0f14;
+    --card: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #f4f1f7;
+    --muted: #cfc7d7;
+    --accent: #C19ABE;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .alepariv-about {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .about-card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    padding: 60px;
+    border-radius: 32px;
+    background: var(--card);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--border);
+    box-shadow:
+      0 10px 40px rgba(0, 0, 0, 0.3),
+      inset 0 1px 1px rgba(255,255,255,0.08);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(193, 154, 190, 0.12);
+    border: 1px solid rgba(193, 154, 190, 0.25);
+    color: var(--accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 24px;
+    max-width: 900px;
+  }
+
+  .intro {
+    font-size: 1.25rem;
+    color: var(--text);
+  }
+
+  .grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+  }
+
+  .card {
+    padding: 32px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(193,154,190,0.4);
+    box-shadow: 0 12px 30px rgba(193,154,190,0.12);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+  }
+
+  .glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+  }
+
+  .glow-1 {
+    width: 340px;
+    height: 340px;
+    background: #C19ABE;
+    top: -80px;
+    left: -100px;
+  }
+
+  .glow-2 {
+    width: 300px;
+    height: 300px;
+    background: #8c6ba8;
+    bottom: -100px;
+    right: -80px;
+  }
+
+  @media (max-width: 768px) {
+    .about-card {
+      padding: 36px 28px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p,
+    .intro {
+      font-size: 1rem;
+    }
+  }
+</style>
