@@ -137,6 +137,164 @@
         width: 100%;
     }
 }
+
+ 
+.alepariv-about {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--section-light-bg-color);
+    color: var(--section-light-text-color);
+}
+
+.alepariv-about .about-card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    padding: 60px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(193, 154, 190, 0.24);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.alepariv-about .tag {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(193, 154, 190, 0.14);
+    border: 1px solid rgba(193, 154, 190, 0.3);
+    color: var(--highlight);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.alepariv-about h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2.8rem, 5vw, 4.6rem);
+    line-height: 1.05;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    font-family: 'DM Serif Display', serif;
+}
+
+.alepariv-about h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+    color: var(--highlight);
+    font-weight: 500;
+}
+
+.alepariv-about p {
+    color: var(--section-light-text-color);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 24px;
+    max-width: 900px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.alepariv-about .intro {
+    font-size: 1.25rem;
+    color: var(--cover-text-color);
+}
+
+.alepariv-about .grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.alepariv-about .card {
+    padding: 32px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(193, 154, 190, 0.18);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.alepariv-about .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(193, 154, 190, 0.4);
+    box-shadow: 0 12px 30px rgba(193, 154, 190, 0.15);
+}
+
+.alepariv-about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alepariv-about li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    color: var(--section-light-text-color);
+    line-height: 1.75;
+}
+
+.alepariv-about li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--highlight);
+    box-shadow: 0 0 12px rgba(193, 154, 190, 0.5);
+}
+
+.alepariv-about .glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.28;
+}
+
+.alepariv-about .glow-1 {
+    width: 320px;
+    height: 320px;
+    background: var(--highlight);
+    top: -80px;
+    left: -100px;
+}
+
+.alepariv-about .glow-2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(145, 106, 149, 0.75);
+    bottom: -100px;
+    right: -80px;
+}
+
+@media (max-width: 768px) {
+    .alepariv-about {
+        padding: 60px 18px;
+    }
+
+    .alepariv-about .about-card {
+        padding: 36px 24px;
+    }
+
+    .alepariv-about h1 {
+        font-size: 2.8rem;
+    }
+
+    .alepariv-about p,
+    .alepariv-about .intro {
+        font-size: 1rem;
+    }
+}
 </style>
 
 
@@ -242,13 +400,6 @@
               
 
               
-                 <a class='btn site-menu' href='/de/legal/'>Legal</a>
-              
-            
-              
-              
-
-              
                  <a class='btn site-menu' href='https://wa.link/bx5dkn'>WhatsApp&nbsp;<i class="fa fa-external-link"></i></a>
               
             
@@ -284,7 +435,7 @@
             
         
             
-            <a class='fn-item' item_index='5' href='#legal-stuff'>Legal stuff</a>
+            <a class='fn-item' item_index='5' href='#nuestra-esencia'>Nuestra Esencia</a>
             
         
         
@@ -405,34 +556,62 @@
                     <h2 class="post-title">Sobre Alejandra</h2>
                 </header>
                 <section class="post-content">
-                    <p>Fundadora de ALEPARIV</p>
-<h5 id="alejandra-padilla-rivera">Alejandra Padilla Rivera</h5>
-<p>Alejandra Padilla Rivera es terapeuta con enfoque <strong>sistémico</strong> y <strong>holístico</strong>, especializada en acompañamiento emocional, dinámicas familiares y procesos de transformación consciente.</p>
-<p>Su trabajo integra herramientas psicológicas, sistémicas y energéticas para ayudar a las personas a comprender el origen de sus patrones emocionales y construir una vida con mayor claridad y bienestar.</p>
-<hr>
-<h2 id="experiencia-y-especialidades">Experiencia y Especialidades:</h2>
-<ul>
-<li>Psicología Sistémica</li>
-<li>Órdenes del Amor</li>
-<li>Diseño Humano</li>
-<li>Procesos terapéuticos individuales</li>
-<li>Talleres conscientes</li>
-<li>Acompañamiento emocional</li>
-<li>Terapias complementarias</li>
-<li>Desarrollo personal y espiritual</li>
-</ul>
-<hr>
-<h2 id="su-estilo-terapéutico">Su Estilo Terapéutico:</h2>
-<p>Su estilo terapéutico se caracteriza por:</p>
-<ul>
-<li>Cercanía humana</li>
-<li>Confrontación consciente</li>
-<li>Contención emocional</li>
-<li>Profundidad terapéutica</li>
-<li>Lenguaje claro y sensible</li>
-<li>Integración emocional y sistémica</li>
-</ul>
-<hr>
+                    
+
+<section class="alepariv-about">
+  <!-- <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div> -->
+
+  <div class="about-card">
+    <span class="tag">Fundadora de ALEPARIV</span>
+
+    <h1>Sobre Alejandra Padilla Rivera</h1>
+
+    <p class="intro">
+      Alejandra Padilla Rivera es terapeuta con enfoque sistémico y holístico,
+      especializada en acompañamiento emocional, dinámicas familiares y procesos
+      de transformación consciente.
+    </p>
+
+    <p>
+      Su trabajo integra herramientas psicológicas, sistémicas y energéticas
+      para ayudar a las personas a comprender el origen de sus patrones emocionales
+      y construir una vida con mayor claridad y bienestar.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Experiencia y Especialidades</h2>
+
+        <ul>
+          <li>Psicología Sistémica</li>
+          <li>Órdenes del Amor</li>
+          <li>Diseño Humano</li>
+          <li>Procesos terapéuticos individuales</li>
+          <li>Talleres conscientes</li>
+          <li>Acompañamiento emocional</li>
+          <li>Terapias complementarias</li>
+          <li>Desarrollo personal y espiritual</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Su Estilo Terapéutico</h2>
+
+        <ul>
+          <li>Cercanía humana</li>
+          <li>Confrontación consciente</li>
+          <li>Contención emocional</li>
+          <li>Profundidad terapéutica</li>
+          <li>Lenguaje claro y sensible</li>
+          <li>Integración emocional y sistémica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
                 </section>
             </article>
@@ -489,15 +668,30 @@
         
         
         <div class='post-holder'>
-            <article id='legal-stuff' class='post  last'>
+            <article id='nuestra-esencia' class='post  last'>
                 <header class="post-header">
-                    <h2 class="post-title">Brief Legal Information</h2>
+                    <h2 class="post-title">Nuestra Esencia</h2>
                 </header>
                 <section class="post-content">
-                    <p>The file <strong>legal-brief.md</strong> creates an internal link on the cover page without the leading icon.</p>
-<p>If the parameter <code>detailed_page_homepage_content</code> is set to false neither this section nor the navigation menu entry will be shown (but the link on the cover page will be).</p>
-<p>If <code>detailed_page_homepage_content</code> is set to true or is missing at all, the link, navigation menu and the content will be rendered. In that case this section might contain less or just summarized information compared to the single page referenced by the parameter <code>detailed_page_path</code>.</p>
-<p>Want to see more about the details? See <a href="/legal/">dedicated page</a> with more details or hit the button &lsquo;Legal&rsquo; on the cover page.</p>
+                    <p>En Alepariv creemos que:</p>
+<p>El síntoma tiene una historia.
+El cuerpo comunica lo que el alma calla.
+La conciencia transforma más que la culpa.
+Sanar no es convertirse en alguien nuevo, sino regresar al centro de uno mismo.
+El bienestar emocional también necesita estructura, dirección y responsabilidad consciente.</p>
+<h4 id="misión">Misión</h4>
+<p>Brindar acompañamiento psicológico y holístico desde una visión sistémica, humana y consciente, ayudando a las personas a recuperar claridad emocional, equilibrio interno y conexión con su autenticidad.</p>
+<h4 id="visión">Visión</h4>
+<p>Convertirnos en un referente de acompañamiento terapéutico y desarrollo humano en habla hispana, integrando herramientas psicológicas, sistémicas y holísticas que permitan procesos profundos, accesibles y transformadores.</p>
+<p>Valores
+Presencia humana
+Ética terapéutica
+Conciencia
+Respeto por los procesos
+Confidencialidad
+Empatía
+Transformación consciente
+Responsabilidad emocional</p>
 
                 </section>
             </article>
