@@ -41,23 +41,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 <style>
-/* Global font override - Be Vietnam for body, DM Serif Display for headings */
-body, body * {
-    font-family: 'Be Vietnam', sans-serif !important;
-}
+/* Coherent color & font overrides - maintain theme hierarchy while applying custom fonts */
 
-h1, h2, h3, h4, h5, h6, .blog-title {
-    font-family: 'DM Serif Display', serif !important;
-}
-
-/* Alternative: Override only the colors if fonts don't apply */
+/* 1. Ensure color variables are correctly set (for fallback) */
 :root {
-    --section-light-text-color: #3a4145 !important;
-    --section-light-bg-color: #e6d7e5 !important;
-    --section-dark-bg-color: #c19abe !important;
-    --highlight: #c19abe !important;
-    --highlight-contrast: #ffffff !important;
-    --cover-title-color-hx-color: #C19ABE !important;
+    --section-light-text-color: #3a4145;
+    --section-light-bg-color: #e6d7e5;
+    --section-dark-bg-color: #c19abe;
+    --highlight: #c19abe;
+    --highlight-contrast: #ffffff;
+    --highlight-inverse: #dac2d8;
+    --highlight-inverse-contrast: #3a4145;
+    --cover-title-color-hx-color: #C19ABE;
+}
+
+/* 2. Apply custom fonts to specific sections (preserve theme defaults for standard elements) */
+/* Keep body: Roboto Slab, h1-h6: Open Sans per theme design */
+
+/* 3. Custom heading font for specific sections */
+.alepariv-about h1,
+.blog-title {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* 4. Custom body font for specific sections */
+.alepariv-about p,
+.contact-pill-text,
+.alepariv-about .card,
+.alepariv-about li {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+/* 5. Ensure hover/highlight states use correct variables */
+.contact-pill:hover,
+.contact-pill:focus-visible {
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+}
+
+.contact-pill-icon:hover,
+.contact-pill-icon:focus-visible {
+    background: var(--highlight-contrast);
+    color: var(--highlight);
 }
 
 .contact-grid {
