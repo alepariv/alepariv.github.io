@@ -11,7 +11,7 @@ header_logo: "images/picture4.png"
 # Headers are safeHTML, you can use HTML tags such as b,i,u,br
 header_headline: "<img src='/images/favicon-32x32.png' alt='favicon' class='header-icon'><b>ALEPARIV</b>"
 header_subheadline: "<b>Centro</b> Psicológico y <b> Holístico</b>"
-header_subsubheadline: "<br><i>\"<b>Tú</b> tienes la ruta del camino a tu bienestar, atrévete a descubrirla.\"</i></br>"
+header_subsubheadline: "<i>\"<b>Tú</b> tienes la ruta del camino a tu bienestar, atrévete a descubrirla.\"</i>"
 
 # Add a 'Go back to top' item to the navigation menu
 # Title: name of navigation menu entry

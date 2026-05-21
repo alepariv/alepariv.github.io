@@ -76,8 +76,27 @@
     font-family: 'DM Serif Display', serif;
 }
 
-/* 5. Custom body font for specific sections */
-.alepariv-about p,
+
+
+/* 8. Force nav hover color and logo sizing more specifically */
+.fixed-nav a.fn-item:hover,
+.fixed-nav a.fn-item.active {
+    color: var(--sticky-menu-text-color) !important;
+}
+
+@media (min-width: 501px) {
+    #blog-logo {
+        max-height: 153px !important;
+        height: auto !important;
+        width: auto !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #blog-logo { max-height: 80px !important; }
+}
+
+</style>
 .contact-pill-text,
 .alepariv-about .card,
 .alepariv-about li,
@@ -346,4 +365,9 @@ a.fn-item.active {
 {{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
 {{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
 <link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
+
+<!-- Also add explicit favicon links to ensure correct selection by browsers -->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
