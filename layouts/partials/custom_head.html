@@ -58,21 +58,34 @@
 /* 2. Apply custom fonts to specific sections (preserve theme defaults for standard elements) */
 /* Keep body: Roboto Slab, h1-h6: Open Sans per theme design */
 
-/* 3. Custom heading font for specific sections */
+/* 3. Header element styles - explicit colors for title/description/arrow */
+.blog-title,
+.blog-description,
+.brand-headline {
+    color: var(--cover-title-color-hx-color);
+    font-family: 'DM Serif Display', serif;
+}
+
+#header-arrow {
+    color: var(--cover-title-color-hx-color);
+}
+
+/* 4. Custom heading font for specific sections */
 .alepariv-about h1,
 .blog-title {
     font-family: 'DM Serif Display', serif;
 }
 
-/* 4. Custom body font for specific sections */
+/* 5. Custom body font for specific sections */
 .alepariv-about p,
 .contact-pill-text,
 .alepariv-about .card,
-.alepariv-about li {
+.alepariv-about li,
+.blog-description {
     font-family: 'Be Vietnam', sans-serif;
 }
 
-/* 5. Ensure hover/highlight states use correct variables */
+/* 6. Ensure hover/highlight states use correct variables */
 .contact-pill:hover,
 .contact-pill:focus-visible {
     background-color: var(--highlight);
@@ -83,6 +96,24 @@
 .contact-pill-icon:focus-visible {
     background: var(--highlight-contrast);
     color: var(--highlight);
+}
+
+/* 7. Navigation and button hover states */
+a.btn:hover,
+#site-head a.btn:hover {
+    background-color: var(--highlight-inverse);
+    color: var(--highlight-inverse-contrast);
+}
+
+.btn-lang:hover,
+.btn-lang.active {
+    background-color: var(--highlight-inverse);
+    color: var(--highlight-inverse-contrast);
+}
+
+a.fn-item:hover,
+a.fn-item.active {
+    color: var(--sticky-menu-text-color);
 }
 
 .contact-grid {
