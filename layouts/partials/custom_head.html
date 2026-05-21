@@ -41,6 +41,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 <style>
+/* Global font override - Be Vietnam for body, DM Serif Display for headings */
+body, body * {
+    font-family: 'Be Vietnam', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .blog-title {
+    font-family: 'DM Serif Display', serif !important;
+}
+
+/* Alternative: Override only the colors if fonts don't apply */
+:root {
+    --section-light-text-color: #3a4145 !important;
+    --section-light-bg-color: #e6d7e5 !important;
+    --section-dark-bg-color: #c19abe !important;
+    --highlight: #c19abe !important;
+    --highlight-contrast: #ffffff !important;
+    --cover-title-color-hx-color: #C19ABE !important;
+}
+
 .contact-grid {
     display: flex;
     flex-wrap: wrap;
