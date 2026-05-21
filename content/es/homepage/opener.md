@@ -6,7 +6,7 @@ header_menu: true
 
 ¿Quiénes somos?
 
-Alepariv – Centro **Psicológico** y Holístico es un espacio de acompañamiento terapéutico, emocional y sistémico creado para guiar procesos de transformación profunda desde una mirada humana, consciente e integral.
+**Alepariv** – Centro **Psicológico** y Holístico es un espacio de acompañamiento terapéutico, emocional y sistémico creado para guiar procesos de transformación profunda desde una mirada humana, consciente e integral.
 
 Integramos herramientas de:
 
