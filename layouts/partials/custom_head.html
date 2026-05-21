@@ -371,3 +371,12 @@ a.fn-item.active {
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
+<!-- Runtime safeguard: enforce correct sticky menu text color in case another stylesheet overrides the variable -->
+<script>
+    try {
+        document.documentElement.style.setProperty('--sticky-menu-text-color', '#fbf7fb');
+    } catch (e) {
+        console.error('Failed to set CSS variable --sticky-menu-text-color', e);
+    }
+</script>
+
